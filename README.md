@@ -51,6 +51,9 @@ ORDER BY mvp_score_z DESC;
 
 ## Biggest Movers (MVP Momentum)
 
+Identifies players with the largest day-over-day changes in MVP ranking,
+highlighting short-term momentum shifts.
+
 ```sql
 SELECT TOP 10
     stat_date,
