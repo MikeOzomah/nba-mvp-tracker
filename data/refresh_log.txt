@@ -1,0 +1,51 @@
+C:\Users\ozoma\PycharmProjects\HelloWorld\nba_mvp_tracker\mvp_daily_refresh.py:80: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  tables = pd.read_html(resp.text)
+Traceback (most recent call last):
+  File "C:\Users\ozoma\PycharmProjects\HelloWorld\nba_mvp_tracker\mvp_daily_refresh.py", line 304, in <module>
+    main()
+  File "C:\Users\ozoma\PycharmProjects\HelloWorld\nba_mvp_tracker\mvp_daily_refresh.py", line 295, in main
+    print("\u2705 Auto-download + load completed successfully.")
+  File "C:\Users\ozoma\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+C:\Users\ozoma\PycharmProjects\HelloWorld\nba_mvp_tracker\mvp_daily_refresh.py:80: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  tables = pd.read_html(resp.text)
+Traceback (most recent call last):
+  File "C:\Users\ozoma\PycharmProjects\HelloWorld\nba_mvp_tracker\mvp_daily_refresh.py", line 304, in <module>
+    main()
+  File "C:\Users\ozoma\PycharmProjects\HelloWorld\nba_mvp_tracker\mvp_daily_refresh.py", line 295, in main
+    print("\u2705 Auto-download + load completed successfully.")
+  File "C:\Users\ozoma\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+C:\Users\ozoma\PycharmProjects\HelloWorld\nba_mvp_tracker\mvp_daily_refresh.py:80: FutureWarning: Passing literal html to 'read_html' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  tables = pd.read_html(resp.text)
+Traceback (most recent call last):
+  File "C:\Users\ozoma\PycharmProjects\HelloWorld\nba_mvp_tracker\mvp_daily_refresh.py", line 304, in <module>
+    main()
+  File "C:\Users\ozoma\PycharmProjects\HelloWorld\nba_mvp_tracker\mvp_daily_refresh.py", line 295, in main
+    print("\u2705 Auto-download + load completed successfully.")
+  File "C:\Users\ozoma\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+Auto-download + load completed successfully.
+Saved latest CSV: data\per_game.csv
+Archived CSV: data\archive\per_game_2025-12-21.csv
+Auto-download + load completed successfully.
+Saved latest CSV: data\per_game.csv
+Archived CSV: data\archive\per_game_2025-12-21.csv
+Auto-download + load completed successfully.
+Saved latest CSV: data\per_game.csv
+Archived CSV: data\archive\per_game_2025-12-21.csv
+Auto-download + load completed successfully.
+Saved latest CSV: data\per_game.csv
+Archived CSV: data\archive\per_game_2025-12-21.csv
+Auto-download + load completed successfully.
+Saved latest CSV: data\per_game.csv
+Archived CSV: data\archive\per_game_2025-12-30.csv
+Auto-download + load completed successfully.
+Saved latest CSV: data\per_game.csv
+Archived CSV: data\archive\per_game_2025-12-31.csv

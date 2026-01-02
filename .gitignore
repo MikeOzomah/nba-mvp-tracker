@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual env
+.venv/
+venv/
+
+# PyCharm
+.idea/
+
+# Data outputs
+data/archive/
+data/*.csv
+*.log
+
+# OS junk
+.DS_Store
+Thumbs.db
