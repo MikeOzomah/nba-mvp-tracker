@@ -89,5 +89,31 @@ GROUP BY p.player_name, t.team_abbr
 ORDER BY total_vorp DESC;
 ```
 
+## Player Performance Trend (Momentum Over Time)
+
+Tracks a single player’s rolling performance to identify upward or downward momentum
+throughout the season.
+
+```sql
+SELECT
+    stat_date,
+    player_name,
+    team_abbr,
+    pts,
+    reb,
+    ast,
+    mvp_score_z,
+    ROUND(
+        AVG(mvp_score_z) OVER (
+            PARTITION BY player_name
+            ORDER BY stat_date
+            ROWS BETWEEN 6 PRECEDING AND CURRENT ROW
+        ), 3
+    ) AS rolling_7_day_mvp_score
+FROM nba.v_mvp_race_z_latest
+WHERE player_name = 'Nikola Jokic'
+ORDER BY stat_date;
+```
+
 
 
