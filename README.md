@@ -49,29 +49,6 @@ SELECT TOP 10
 FROM nba.v_mvp_race_z_latest
 ORDER BY mvp_score_z DESC;
 
-### Biggest Movers (Momentum)
-'''sql
-SELECT TOP 15
-    player_name,
-    rank_yesterday,
-    rank_today,
-    rank_change
-FROM nba.v_mvp_race_momentum
-ORDER BY rank_change DESC;
-
-### Player Comparison
-'''sql
-SELECT
-    p.player_name,
-    AVG(f.pts) AS avg_pts,
-    AVG(f.reb) AS avg_reb,
-    AVG(f.ast) AS avg_ast,
-    AVG(f.ts_pct) AS avg_ts,
-    AVG(f.vorp) AS avg_vorp
-FROM nba.fact_player_daily_stats f
-JOIN nba.dim_player p ON p.player_id = f.player_id
-WHERE p.player_name IN ('player_1', 'player_2')
-GROUP BY p.player_name;
 
 ## Automation
 
