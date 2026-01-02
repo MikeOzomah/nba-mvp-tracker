@@ -49,4 +49,23 @@ FROM nba.v_mvp_race_z_latest
 ORDER BY mvp_score_z DESC;
 
 
+## Biggest Movers (MVP Momentum)
+
+Identifies players with the largest day-over-day changes in MVP ranking,
+highlighting short-term momentum shifts.
+
+```sql
+SELECT TOP 10
+    stat_date,
+    player_name,
+    team_abbr,
+    mvp_score_z,
+    rank_yesterday,
+    rank_today,
+    rank_change
+FROM nba.v_mvp_race_momentum
+WHERE rank_change IS NOT NULL
+ORDER BY ABS(rank_change) DESC, mvp_score_z DESC;
+
+
 
