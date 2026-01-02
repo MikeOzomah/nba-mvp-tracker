@@ -37,4 +37,16 @@ This project implements an end-to-end ETL pipeline:
 This structure supports historical analysis, trend tracking,
 and repeatable daily loads.
 
+## Top MVP Candidates (Today)
+
+```sql
+SELECT TOP 10
+    stat_date,
+    player_name,
+    team_abbr,
+    mvp_score_z
+FROM nba.v_mvp_race_z_latest
+ORDER BY mvp_score_z DESC;
+
+
 
