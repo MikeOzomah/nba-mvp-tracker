@@ -49,7 +49,7 @@ FROM nba.v_mvp_race_z_latest
 ORDER BY mvp_score_z DESC;
 
 
-'''md
+
 ## Biggest Movers (MVP Momentum)
 
 Identifies players with the largest day-over-day changes in MVP ranking,
