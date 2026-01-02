@@ -1,4 +1,4 @@
-# NBA MVP Tracker (Daily Refresh)
+# NBA 2025-26 MVP Tracker (Daily Refresh)
 
 A small ETL pipeline that:
 1) pulls NBA per-game stats from Basketball-Reference,
