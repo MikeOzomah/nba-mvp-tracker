@@ -47,8 +47,7 @@ SELECT TOP 10
     mvp_score_z
 FROM nba.v_mvp_race_z_latest
 ORDER BY mvp_score_z DESC;
-
-
+```
 
 ## Biggest Movers (MVP Momentum)
 
