@@ -6,7 +6,7 @@ A small ETL pipeline that:
 3) loads data into SQL Server (dims + fact),
 4) powers SQL views for MVP ranking + momentum.
 
-## Why This Project Serves a Purpu
+## Why This Project Serves a Purpose
 This project explores how MVP narratives can diverge from traditional
 media rankings by applying standardized statistical scoring and daily
 momentum tracking.
